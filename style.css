@@ -1,12 +1,15 @@
 .skills ul {
     list-style-type: disc;
     margin-left: 20px;
-  }
-  
-  .skills li {
+}
+
+.skills li {
     margin-bottom: 5px;
-  }
-  
+}
+
+
+
+
 
 html,
 body,
@@ -195,12 +198,17 @@ h2 {
 
 .cont {
     display: flex;
-    justify-content: space-around;
     height: 100vh;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-.column {
-    width: 50%;
+.column1 {
+    width: 47%;
+}
+
+.column2{
+    width: 53%;
 }
 
 .about-me .starter {
@@ -249,7 +257,7 @@ h2 {
 .rightside {
 
     overflow-y: scroll;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 }
 
 ::-webkit-scrollbar {
@@ -509,35 +517,35 @@ h2 {
 }
 
 
-.projects-container{
+.projects-container {
     padding: 80px 0px;
 }
 
 
-.nav a{
+.nav a {
     display: block;
 }
 
-.navbar{
+.navbar {
     display: block;
     padding: 0px;
 }
 
-.navbar li a{
+.navbar li a {
     transition: 0.2s;
     color: var(--para1c);
     scale: 0.94;
     font-size: 1.4rem;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     color: white;
     scale: 1;
 }
 
 
 
-.sociallinks{
+.sociallinks {
     margin-top: 60px;
     margin-left: 20px;
     display: flex;
@@ -545,29 +553,68 @@ h2 {
     gap: 40px;
 }
 
-.icon{
-  scale: 1.8;
-  color: rgb(196, 177, 177);
+.icon {
+    scale: 1.8;
+    color: rgb(196, 177, 177);
 }
 
-.navbar a{
+.navbar a {
     display: inline-block;
 }
 
-.icon1{
+.icon1 {
     color: var(--para1c);
 }
 
-.navbar li .inactive{
+.navbar li .inactive {
     opacity: 0.6;
 }
 
-.navbar li .active{
+.navbar li .active {
     color: white;
     scale: 1;
     opacity: 1;
 }
 
-.leftside li a{
+.leftside li a {
     margin-left: 20px;
+}
+
+#Work-experience a{
+    text-decoration: none;
+}
+
+@media (width<1600px){
+    .cont{
+        flex-direction: column;
+        overflow: scroll;
+        height: 100%;
+    }
+    body{
+       overflow: auto;
+    }
+    .leftside{
+        position: relative;
+        overflow: auto;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .rightside{
+        width: 100%;
+        overflow: auto;
+    }
+
+    p.starter{
+        margin-top: 10px;
+    }
+
+    section{
+        width: 100%;
+    }
+.sociallinks{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 }
