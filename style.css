@@ -617,4 +617,11 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+body{
+    width: 90%;
+}
+:root {
+    --para1f: 18px;
+    --para2f: 16px;
+}
 }
