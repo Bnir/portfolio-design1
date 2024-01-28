@@ -207,7 +207,7 @@ h2 {
     width: 47%;
 }
 
-.column2{
+.column2 {
     width: 53%;
 }
 
@@ -580,57 +580,64 @@ h2 {
     margin-left: 20px;
 }
 
-#Work-experience a{
+#Work-experience a {
     text-decoration: none;
 }
 
-@media (width<1600px){
-    .cont{
+@media (width<1600px) {
+    .cont {
         flex-direction: column;
         overflow: scroll;
         height: 100%;
     }
-    body{
-       overflow: auto;
+
+    body {
+        overflow: auto;
     }
-    .leftside{
+
+    .leftside {
         position: relative;
         overflow: auto;
-        z-index: 1;
         width: 100%;
         height: auto;
     }
 
-    .rightside{
+    .rightside {
         width: 100%;
         overflow: auto;
     }
 
-    p.starter{
+    p.starter {
         margin-top: 10px;
     }
 
-    section{
+    section {
         width: 100%;
     }
-.sociallinks{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-body{
-    width: 90%;
-}
-:root {
-    --para1f: 22px;
-    --para2f: 21px;
-}
-.project{
-    flex-direction: column;
-}
-.imagecont{
-    text-align: center;
-}
-.projects-container .project .imagecont img {
-    width: 400px;
-}
+
+    .sociallinks {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    body {
+        width: 90%;
+    }
+
+    :root {
+        --para1f: 22px;
+        --para2f: 21px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .imagecont {
+        text-align: center;
+    }
+
+    .projects-container .project .imagecont img {
+        width: 400px;
+    }
 }
