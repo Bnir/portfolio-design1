@@ -621,7 +621,16 @@ body{
     width: 90%;
 }
 :root {
-    --para1f: 18px;
-    --para2f: 16px;
+    --para1f: 22px;
+    --para2f: 21px;
+}
+.project{
+    flex-direction: column;
+}
+.imagecont{
+    text-align: center;
+}
+.projects-container .project .imagecont img {
+    width: 400px;
 }
 }
